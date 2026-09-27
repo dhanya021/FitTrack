@@ -1,0 +1,19 @@
+{
+  "name": "fittrack-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FitTrack - Full-Stack MERN Fitness Tracking Application",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build:client": "npm --prefix client run build",
+    "start:server": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "FitTrack Team",
+  "license": "MIT"
+}
